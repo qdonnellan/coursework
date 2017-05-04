@@ -1,3 +1,7 @@
+/**
+ * Notes taken from week 1's lecture slides
+ */
+
 public class QuickUnion {
     private int[] id;
 
