@@ -11,7 +11,7 @@ public class FixedCapacityStackOfStringsTest {
 	}
 
 	@Test
-	public void test_non_empty_stack_adter_pushing() {
+	public void test_non_empty_stack_after_pushing() {
 		FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(10);
 		stack.push("something");
 		assertFalse(stack.isEmpty());
