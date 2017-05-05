@@ -1,39 +1,31 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+
 public class QuickFindTest {
 
-	public void test() {
-		test_union_then_connection();
-		test_not_connected_by_default();
-		test_multiple_unions();
-	}
-
-	private void test_not_connected_by_default() {
+	@Test
+	public void test_not_connected_by_default() {
 		QuickFind qf = new QuickFind(10);
-		assert qf.connected(0, 1) == false;
+		assertFalse(qf.connected(0, 1));
 	}
 
-	private void test_union_then_connection() {
+	@Test
+	public void test_union_then_connection() {
 		QuickFind qf = new QuickFind(10);
 		qf.union(1, 2);
-		assert qf.connected(1, 2) == true;
+		assertTrue(qf.connected(1, 2));
 	}
 
-	private void test_multiple_unions() {
+	@Test
+	public void test_multiple_unions() {
 		QuickFind qf = new QuickFind(10);
 		qf.union(1, 2);
 		qf.union(2, 3);
 		qf.union(5, 6);
 		qf.union(6, 2);
-		assert qf.connected(1, 2) == true;
-		assert qf.connected(1, 6) == true;
-		assert qf.connected(3, 5) == true;
-		assert qf.connected(3, 7) == false;
-	}
-
-	/** 
-	* A very manual test client; run using "java -ea QuickFindTest"
-	*/
-	public static void main(String[] args) {
-		QuickFindTest quickFindTest = new QuickFindTest();
-		quickFindTest.test();
+		assertTrue(qf.connected(1, 2));
+		assertTrue(qf.connected(1, 6));
+		assertTrue(qf.connected(3, 5));
+		assertFalse(qf.connected(3, 7));
 	}
 }
