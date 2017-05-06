@@ -10,7 +10,7 @@ public class LinkedStackOfStringsTest {
 	}
 
 	@Test
-	public void test_non_empty_stack_adter_pushing() {
+	public void test_non_empty_stack_after_pushing() {
 		LinkedStackOfStrings stack = new LinkedStackOfStrings();
 		stack.push("something");
 		assertFalse(stack.isEmpty());
