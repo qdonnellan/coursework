@@ -1,5 +1,8 @@
 /**
- * This is just practicing the Iterator implemenation
+ * These are notes taken during the lecture below:
+ * Lecture: "Week 2 - Stacks and Queues"
+ * Course: "Algorithms Part-1" on Coursera
+ * url: https://www.coursera.org/learn/algorithms-part1/supplement/UAJbP/lecture-slides
  */
 
 /**

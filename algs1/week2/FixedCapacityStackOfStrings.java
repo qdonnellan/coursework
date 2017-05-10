@@ -1,4 +1,9 @@
-/* Implementing a fixed capacity (array-based) stack of string, based on lecture for week 2 */
+/**
+ * These are notes taken during the lecture below:
+ * Lecture: "Week 2 - Stacks and Queues"
+ * Course: "Algorithms Part-1" on Coursera
+ * url: https://www.coursera.org/learn/algorithms-part1/supplement/UAJbP/lecture-slides
+ */
 
 public class FixedCapacityStackOfStrings {
 	private String[] s;
