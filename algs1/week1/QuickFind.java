@@ -1,6 +1,10 @@
 /**
- * Notes taken from week 1's lecture slides
+ * These are notes taken during the lecture below:
+ * Lecture: "Week 1 - Union Find"
+ * Course: "Algorithms Part-1" on Coursera
+ * url: https://www.coursera.org/learn/algorithms-part1/supplement/bcelg/lecture-slides
  */
+
 
 public class QuickFind {
 	private int[] id;
