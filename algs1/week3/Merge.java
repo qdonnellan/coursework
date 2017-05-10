@@ -9,7 +9,9 @@
 public class Merge {
 
 	/**
-	 * Merge pre-sorted a into pre-sorted b
+	 * Merge pre-sorted a into pre-sorted b. This is slightly differen than what is
+	 * presented in the lectures; in this case a and b are 2 different, pre-sorted
+	 * arrays and we just want to return a final combined array.
 	 */
 	public static Integer[] merge(Integer[] a, Integer[] b) {
 		int ai = 0;
