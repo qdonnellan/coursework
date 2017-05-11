@@ -7,8 +7,7 @@
 
 
 public class MergeSort {
-	public static void merge(Comparable[] a, int lo, int mid, int hi) {
-		Comparable[] aCopy = new Comparable[a.length];
+	public static void merge(Comparable[] a, Comparable[] aCopy, int lo, int mid, int hi) {
 		for (int k = lo; k <= hi; k++) {
 			aCopy[k] = a[k];
 		}
@@ -39,5 +38,18 @@ public class MergeSort {
 
 	private static boolean less(Comparable a, Comparable b) {
 		return a.compareTo(b) < 0;
+	}
+
+	private static void sort(Comparable[] a, Comparable[] aCopy, int lo, int hi) {
+		if (hi <= lo) return;
+		int mid = lo + (hi - lo) / 2;
+		sort(a, aCopy, lo, mid);
+		sort(a, aCopy, mid+1, hi);
+		merge(a, aCopy, lo, mid, hi);
+	}
+
+	public static void mergeSort(Comparable[] a) {
+		Comparable[] aCopy = new Comparable[a.length];
+		sort(a, aCopy, 0, a.length - 1);
 	}
 }
