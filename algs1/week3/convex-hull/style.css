@@ -1,0 +1,21 @@
+.point {
+	fill: #ccc;
+}
+
+.lowest-point {
+	fill: red;
+}
+
+polyline, .ray {
+	fill:none;
+	stroke-width:3;
+	stroke:red;
+	stroke-opacity:0.5;
+}
+.sweepline {
+	stroke:#ccc;
+}
+
+.convex-hull-container {
+	text-align: center;
+}
