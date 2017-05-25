@@ -19,6 +19,10 @@ public class BinaryHeapPriorityQueue<Item extends Comparable<Item>> {
         return max;               // return the value of the first item
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
     /**
      * Take the item at position k and swim up up to the highest point in the heap
      * where it is no longer larger than it's parent.

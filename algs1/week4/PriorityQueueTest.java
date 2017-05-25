@@ -14,6 +14,7 @@ public class PriorityQueueTest {
         assertEquals((Integer) 9, (Integer) q.deleteMax());
         assertEquals((Integer) 7, (Integer) q.deleteMax());
         assertEquals((Integer) 5, (Integer) q.deleteMax());
+        assertTrue(q.isEmpty());
     }
 
     @Test
@@ -27,5 +28,6 @@ public class PriorityQueueTest {
         assertEquals((Integer) 9, (Integer) heap.deleteMax());
         assertEquals((Integer) 7, (Integer) heap.deleteMax());
         assertEquals((Integer) 5, (Integer) heap.deleteMax());
+        assertTrue(heap.isEmpty());
     }
 }
