@@ -1,3 +1,11 @@
+/**
+ * These are notes taken during the lecture below:
+ * Lecture: "Week 4 - Priority Queues"
+ * Course: "Algorithms Part-1" on Coursera
+ * url: https://www.coursera.org/learn/algorithms-part1/supplement/eHe3d/lecture-slides
+ */
+
+
 
 /**
  * This is an unordered array implementation of a priority queue
