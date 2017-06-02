@@ -1,3 +1,5 @@
+// NOTE: This is incomplete!
+
 var width = 500;
 var height = 500;
 var padding = 4;
