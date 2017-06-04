@@ -8,17 +8,14 @@
 
 
 // Associative array abstraction.
-public class SymbolTable<Key, Value> {
-    private Key[] vals;
+public class SymbolTable<Key extends Comparable<Key>, Value> {
+    private Key[] keys;
     private Value[] vals;
     private int size;
 
-    SymbolTable() {
-        // something...
-    }
 
     public void put(Key key, Value val) {
-
+        return;
     }
 
     public Value get(Key key) {
@@ -58,14 +55,16 @@ public class SymbolTable<Key, Value> {
     }
 
     public boolean isEmpty() {
-
+        // Need to implement
+        return true;
     }
 
     public int size() {
-
+        return size;
     }
 
     public Iterable<Key> keys() {
-
+        // Need to implement.
+        return null;
     }
 }
